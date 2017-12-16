@@ -18,7 +18,7 @@
     "nodemon": "^1.12.7",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
-    "sequelize": "^4.28.2"
+    "sequelize": "^4.28.5"
   },
   "devDependencies": {},
   "description": ""

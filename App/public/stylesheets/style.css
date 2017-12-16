@@ -1,6 +1,7 @@
 form.signup,
 form.login {
   margin-top: 50px;
+  z-index: 1;
 }
 body {
   padding: 50px;
@@ -9,4 +10,16 @@ body {
 
 a {
   color: #00B7FF;
+}
+
+#canvas-basic {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
