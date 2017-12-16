@@ -11,6 +11,7 @@ var user;
 var user_id;
 
     $.get("/api/user_data").then(function(data) {
+      console.log("here!")
         $(".member-name").text(data.username);
          user = data.username
          user_id = data.id
@@ -65,10 +66,9 @@ var user_id;
     //   loginForm.on("submit", function(event) {
     //     event.preventDefault();
         var userData = {
-          user_id: user_id,
           mood_id: mood,
           color: color,
-          date: date
+          mood_date: date
         };
 
         // if (!userData.username || !userData.password) {
@@ -79,18 +79,18 @@ var user_id;
 
 
         // If we have an username and password we run the loginUser function and clear the form
-        logDailyMood(userData.user_id, userData.mood_id, userData.color, userData.date);
+        logDailyMood(userData.user_id, userData.mood_id, userData.color, userData.mood_date);
         // usernameInput.val("");
         // passwordInput.val("");
       });
 
       // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
       function logDailyMood(user_id, mood_id, color, date) {
-        $.post("/api/user_data", {
+        $.post("/api/dailymoods", {
           user_id: user_id,
           mood_id: mood_id,
           color: color,
-          date: date
+          mood_date: date
 
         }).then(function(data) {
           window.location.replace(data);
