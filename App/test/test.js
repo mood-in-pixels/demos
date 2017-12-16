@@ -1,3 +1,6 @@
+// USE NIGHTMARE TO ENSURE OUR LOGIN AND MEMBER PAGES ARE WORKING :)
+// ================================================================
+
 // var Nightmare = require("nightmare");
 // var expect = require("chai").expect;
 
