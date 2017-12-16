@@ -12,19 +12,24 @@ module.exports = function(sequelize, DataTypes) {
     },
     mood_date: {
       type: DataTypes.DATE
-    },
+    }
   });
 
 
-  Mood.associate = function(models) {
-    // We're saying that a Post should belong to an Author
-    // A Post can't be created without an Author due to the foreign key constraint
-    Mood.belongsTo(models.User, {
-      foreignKey: {
-        allowNull: false
-      }
-    });
-  };
+ Mood.associate = function(models) {
+   // We're saying that a Post should belong to an Author
+   // A Post can't be created without an Author due to the foreign key constraint
+   Mood.belongsTo(models.User, {
+     foreignKey: {
+       allowNull: false
+     }
+   }),
+   Mood.belongsTo(models.Dim_moods, {
+     foreignKey: {
+       allowNull: false
+     }
+   })
+ };
 
   return Mood;
 };

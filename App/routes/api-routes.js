@@ -33,6 +33,22 @@ module.exports = function(app) {
     });
   });
 
+    app.post("/api/dailymoods", function(req, res) {
+    console.log(req.body);
+    db.Mood.create({
+      UserId: req.body.user_id,
+      mood_id: req.body.mood_id,
+      color: req.body.color,
+      mood_date: req.body.date,
+      DimMoodId: req.body.DimMoodId
+    }).then(function() {
+      res.redirect(307, "/api/login");
+    }).catch(function(err) {
+      console.log(err);
+      res.json(err);
+    });
+  });
+
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();
