@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Profile | 2180m Mood in Pixels</title>
+
+    <!--CSS // Bootstrap 3.3.7-->
+    <link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel="stylesheet">
+    <!-- Material Google Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/members.css">
+    <!-- Slick CSS --> 
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+
+<!-- jQuery 3.2.1-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Custom JS -->
+<script type="text/javascript" src="js/members.js"></script>
+    <script type="text/javascript" src="js/daily.js"></script>
+
+</head>
+
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/logout">
+          Logout
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2>Welcome <span class="member-name"></span></h2>
+        <h5>How are you feeling today?</h5>
+      </div>
+    </div>
+
+    <!-- data-slick="{'slidesToShow': 1,'slidesToScroll': 1,'autoplay': true,'autoplaySpeed': 5000,'swipe': true,'swipeToSlide': true}" -->
+
+        <div class="carousel slide autoplay"  role="form" id="">
+              
+            <div class="item">
+                <button class="pixel type-1" role="submit" type="submit" data-mood="HAPPY" data-color="#4CAF50" id="green">
+                  <span class="valence">Happy</span>
+                </button>
+            </div>
+            <div class="item">
+                <button class="pixel type-2" role="submit" type="submit" data-mood="STRESSED" data-color="#ffeb3b" id="yellow">
+                  <span class="valence">Stressed</span>
+              </button>
+            </div>
+            <div class="item">
+                <button class="pixel type-3" role="submit" type="submit" data-mood="ANGRY" data-color="#b71c1c" id="red">
+                  <span class="valence">Angry</span>
+                </button>
+            </div>
+            <div class="item">
+                <button class="pixel type-4" role="submit" type="submit" data-mood="CONTENT" data-color="#00bcd4" id="teal">
+                  <span class="valence">Content</span>
+              </button>
+            </div>
+            <div class="item">
+                <button class="pixel type-5"  role="submit" type="submit" data-mood="DEPRESSED" data-color="#17558c" id="blue">
+                  <span class="valence">Depressed</span>
+                </button>
+            </div>
+            <div class="item">
+                <button class="pixel type-6" role="submit" type="submit" data-mood="ENERGETIC" data-color="#ff9800" id="orange">
+                  <span class="valence">Energetic</span>
+              </button>
+            </div>
+            <div class="item">
+                <button class="pixel type-7"  role="submit" type="submit" data-mood="GUILTY" data-color="#673ab7" id="purple">
+                  <span class="valence">Guilty</span>
+                </button>
+            </div>
+            <div class="item">
+                <button class="pixel type-8"  role="submit" type="submit" data-mood="COMPASSIONATE" data-color="#ec407a" id="pink">
+                  <span class="valence">Compassionate</span>
+              </button>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Custom JS -->
+    <!-- Custom JS (swipe script) -->
+<!-- Slick JS -->
+<script type="text/javascript" src="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+
+    
+
+<!--     <script type="text/javascript" src="js/daily.js"></script>
+ -->
+
+</body>
+
+</html>

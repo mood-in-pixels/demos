@@ -29,8 +29,23 @@ Object.keys(db).forEach(function(modelName) {
     db[modelName].associate(db);
   }
 });
+sequelize
+    .authenticate()
+    .then(() => {
+      console.log('Connection has been established successfully.');
+    })
+    .catch((err) => {
+      console.log('Unable to connect to the database:', err);
+    });
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
+
+
+
+// Import Models such that I can use them in the api just by importing 'db'
+db.user = require('./user')(sequelize, Sequelize);
+db.mood = require('./moods')(sequelize, Sequelize);
+// db.articles = require('./articles')(sequelize, Sequelize);
 
 module.exports = db;

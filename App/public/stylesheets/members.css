@@ -1,0 +1,53 @@
+
+/* Slide holds div => .item ==> .pixel*/
+
+.slide, .valencePixel {
+    max-width: 300px;
+    height: 300px;
+    left: 35%;
+}
+.pixel {
+    height: 250px;
+    width: 250px;
+    margin: 30px;
+    float: left;
+}
+span.valence {
+    .img-title {
+        position: absolute;
+        top: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        /*opacity: 0;*/
+        display: none;
+        /* comment this out for CSS hover */
+        background-color: #333;
+        /*transition: all 0.5s ease;*/
+    }
+}
+#blue {
+    background: radial-gradient(#2196F3, #88FAFF);
+}
+#teal {
+    background: radial-gradient(#00BCD4, #BBE5FB);
+}
+#green {
+    background: radial-gradient(#4CAF50, #BEF0CB);
+}
+#yellow {
+    background: radial-gradient(#ffe801, #fcf7bc);
+}
+#purple {
+    background: radial-gradient(#673AB7, #d6acfa);
+}
+#pink {
+    background: radial-gradient(#b3317d, #F5BAF1);
+}
+#red {
+    background: radial-gradient(#d33a32, #FFB9C2);
+}
+#orange {
+    background: radial-gradient(#FF5722, #FFCC82);
+}

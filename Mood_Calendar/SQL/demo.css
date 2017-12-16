@@ -1,0 +1,59 @@
+/*#ab47bc
+#3498db
+#0b5345
+#1a237e
+#b71c1c
+#fbc02d
+*/
+
+/*"Angry", "#B71C1C",
+
+"Guilty", "#7E57C2",  
+
+"Depressed", "#1A237E",
+
+"Stressed", "#FBC02D",
+
+
+
+"Happy", "#2ECC71",
+
+"Content", "#3498DB",
+
+"Energetic", "#FF8A65",
+
+"Compassionate", "#AB47BC",*/
+
+/*Happy*/
+.type-1 {
+  background: #4caf50 ;
+}
+/*Stressed*/
+.type-2 {
+  background: #ffeb3b ;
+}
+/*Angry*/
+.type-3 {
+  background: #B71C1C;
+}
+/*Content*/
+.type-4 {
+background: #00bcd4 ;
+}
+/*Depressed*/
+.type-5 {
+  background: #17558C;
+}
+/*Energetic*/
+.type-6 {
+  background: #ff9800;
+}
+/*Guilty*/
+.type-7 {
+  background: #673ab7;
+}
+/*Compassionate*/
+.type-8 {
+  background: #EC407A;
+}
+

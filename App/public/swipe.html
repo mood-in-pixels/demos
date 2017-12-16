@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>SWIPE | 2180m Mood in Pixels</title>
+
+    <!--CSS // Bootstrap 3.3.7-->
+    <link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel="stylesheet">
+    <!-- Material Google Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="swipe.css">
+    <!-- Slick CSS --> 
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+
+
+</head>
+<div class="container">
+    <div class="carousel slide autoplay" data-slick="{'slidesToShow': 15,'slidesToScroll': 1,'autoplay': true,'autoplaySpeed': 5000,'swipe': true,'swipeToSlide': true}" id="">
+        <div class="item">
+            <button class="pixel" data-neg="#d33a32" data-pos="#FFB9C2" data-state-n="angry" data-state-p="loving" id="red"><span class="valence"></span>
+            <p><span class="valence">(+) love, passion<br>
+            (-) anger, danger, warning</span></p></button>
+        </div>
+        <div class="item">
+            <button class="pixel" data-neg="#FF5722" data-pos="#FFCC82" data-state-n="ignorant" data-state-p="confident" id="orange"><span class="valence"></span>
+            <p><span class="valence">(+) courage, confidence, friendliness<br>
+            (-) ignorance</span></p><span class="valence"></span></button>
+        </div>
+        <div class="item">
+            <button class="pixel" data-neg="#ffe801" data-pos="#fcf7bc" data-state-n="unstable" data-state-p="perky" id="yellow"><span class="valence"></span>
+            <p><span class="valence">(+) bright, perky<br>
+            (-) irresponsible, unstable</span></p></button>
+        </div>
+        <div class="item">
+            <button class="pixel" data-neg="#4CAF50" data-pos="#BEF0CB" data-state-n="guilty" data-state-p="grounded" id="green"><span class="valence"></span>
+            <p><span class="valence">(+) fresh, new, grounded<br>
+            (-) guilt, jealousy</span></p><span class="valence"></span></button>
+        </div>
+        <div class="item">
+            <button class="pixel" data-neg="#00BCD4" data-pos="#BBE5FB" data-state-n="envious" data-state-p="sophisticated" id="turquoise"><span class="valence"></span>
+            <p><span class="valence">(+) protection, health, sophisticated<br>
+            (-) envious</span></p><span class="valence"></span></button>
+        </div>
+        <div class="item">
+            <button class="pixel" data-neg="#2196F3" data-pos="#88FAFF" data-state-n="cold" data-state-p="tranquil" id="blue"><span class="valence"></span>
+            <p><span class="valence">(+) tranquility, secruity, trust<br>
+            (-) coldness</span></p></button>
+        </div>
+        <div class="item">
+            <button class="pixel" data-neg="#673AB7" data-pos="#d6acfa" data-state-n="moody" data-state-p="ambitious" id="purple"><span class="valence"></span>
+            <p><span class="valence">(+) royalty, ambition, spirituality<br>
+            (-) moody</span></p><span class="valence"></span></button>
+        </div>
+        <div class="item">
+            <button class="pixel" data-neg="#b3317d" data-pos="#F5BAF1" data-state-n="immature" data-state-p="happy" id="pink"><span class="valence"></span>
+            <p><span class="valence">(+) happy, compassionate, playful<br>
+            (-) immature</span></p></button>
+        </div>
+        <div class="item">
+            <button class="pixel" data-neg="#4d4b4c" data-pos="#8b8b8b&gt; &lt;span class=" data-state-n="sad" data-state-p="solid" id="grey">
+            <p>(+) solid, intelligent, reliable<br>
+            (-) gloomy, sad</p></button>
+        </div>
+    </div>
+</div>
+<!-- jQuery 3.2.1-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Slick JS -->
+<script type="text/javascript" src="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+<!-- Custom JS -->
+<script type="text/javascript" src="swipe.js"></script>
+
+</body>
+</html>

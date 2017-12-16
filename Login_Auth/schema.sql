@@ -1,2 +1,3 @@
-CREATE DATABASE passport_demo;
-USE passport_demo;
+DROP DATABASE IF EXISTS 2180moods;
+CREATE DATABASE 2180moods;
+USE 2180moods;
