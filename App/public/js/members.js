@@ -86,7 +86,7 @@ var user_id;
 
       // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
       function logDailyMood(user_id, mood_id, color, date) {
-        $.post("/api/dailymoods", {
+        $.post("/api/Moods", {
           user_id: user_id,
           mood_id: mood_id,
           color: color,
