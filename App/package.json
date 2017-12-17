@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "2180 moods",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,5 +18,10 @@
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "sequelize": "^4.3.1"
+  },
+    "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "nightmare": "^2.5.3"
   }
 }
