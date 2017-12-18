@@ -7,7 +7,12 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    color: {
+    color_one: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      len: [7]
+    },
+    color_two: {
       type: DataTypes.STRING,
       allowNull: false,
       len: [7]
