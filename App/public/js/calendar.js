@@ -82,7 +82,7 @@ console.log("here")
 
         var location = $("<div>")
         location.addClass("location")
-        location.text("Gary, IN")
+        location.text("Chicago, IL")
         newListItem.append(location)
 
         var mood = Math.floor(Math.random() * (9 - 1)) + 1

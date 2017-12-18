@@ -7,6 +7,17 @@
 // -------------------------------------------------------------------------------------
 "use strict";
 $(function() {
+
+  // if (localStorage.getItem('instructionState') != 'shown'){
+      $('body').chardinJs('start');
+  //     localStorage.setItem('instructionState','shown');
+  // }
+
+  // Stop showing instructions when screen is clicked
+  // $('body').on('click', function() {
+  //   $(this).chardinJs('stop');
+  // });
+  
 var user;
 var user_id;
 
@@ -71,7 +82,7 @@ var user_id;
 
 
     $(document).on("mouseover",".pixel",function(){
-        $(this).find('.valence').fadeIn(300);
+        $(this).find('.valence').fadeIn(500);
         $(this).find('.valence').fadeOut(1000);
       });
 
@@ -93,7 +104,7 @@ var user_id;
         };
 
 
-                // If we have an username and password we run the loginUser function and clear the form
+                // When the user clicks a pixel, we run the logDailyMood function to enter mood/color into db
                 logDailyMood(user_id, userData.mood_id, userData.color, userData.mood_date, userData.DimMoodId);
 
               });

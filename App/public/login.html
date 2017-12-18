@@ -13,9 +13,10 @@
   <div class="container">
     
     <!-- #canvas-basic element tied to graident background via granim.js  -->
-    <canvas id="canvas-basic"></canvas>
 
     <div class="row">
+        <canvas id="canvas-basic"></canvas>
+
       <div class="col-md-6 col-md-offset-3">
         <h2>Login Form</h2>
 
@@ -36,11 +37,14 @@
         <br>
 
 
-        <p>Or sign up <a href="/">here</a></p>
+        <p>Or sign up <a href="/signup">here</a></p>
       </div>
     </div>
   </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/granim/1.1.0/granim.js"></script>
 <script type="text/javascript">
 var granimInstance = new Granim({
     element: '#canvas-basic',

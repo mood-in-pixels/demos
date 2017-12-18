@@ -1,16 +1,26 @@
 form.signup,
-form.login {
+form.login{
   margin-top: 50px;
-  z-index: 1;
+  padding: 50px;
+  border-radius: 20px;
+  background-color: rgba(255,255,255, .4);
+}
+.navbar {
+  background-color: rgba(255,255,255, .1);
+  border: rgba(255,255,255, .3);
+  box-shadow: rgba(255,255,255, .4);
 }
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
   color: snow;
+}
+a:hover {
+  text-shadow: 1px 1px snow;
+  text-decoration: underline;
 }
 
 #canvas-basic {
