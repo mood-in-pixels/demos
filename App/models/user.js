@@ -1,4 +1,4 @@
-// USER MODEL USED ONLY FOR LOGIN 
+// USER MODEL USED ONLY FOR LOGIN
 // ***** DO NOT CONFUSE `USER.JS MODEL` WITH `MEMBERS.JS/ETC` FUNCTIONALITY THAT ENABLES CRUD >> USER MOODS / DAILY LOGGING
 // ------------------------------------------------------------------------------------------------------------------------
 
@@ -33,7 +33,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false
     }
-    
+
   });
   // Creating a custom method for our User model. This will check if an unhashed password entered by the user can be compared to the hashed password stored in our database
   User.prototype.validPassword = function(password) {
