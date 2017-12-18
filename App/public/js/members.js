@@ -64,7 +64,7 @@ var user_id;
             dots: false,
             arrows: false
         });
-
+      }
 
     // Mouse events *hover (to reveal mood/valence description to users); *click to log mood
     // -------------------------------------------------------------------------------------
