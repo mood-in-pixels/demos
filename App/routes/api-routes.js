@@ -15,7 +15,7 @@ module.exports = function(app) {
     res.json("/members");
   });
 
- 
+
   // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
   // otherwise send back an error
@@ -49,6 +49,22 @@ module.exports = function(app) {
     });
   });
 
+
+      app.get("/api/mood_data", function(req, res){
+        db.Dim_moods.findAll({
+          where: {
+            active : 1
+          }
+        }).then(function(data){
+          res.json(data);
+        }).catch(function(err) {
+        console.log(err);
+        res.json(err);
+      });
+    });
+
+
+
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();
@@ -74,5 +90,5 @@ module.exports = function(app) {
 
 
 
-      
+
 }; // *** END ***
