@@ -1,0 +1,194 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: linear-gradient(#111, #222);
+  background: -webkit-linear-gradient(#111, #222);
+  background: -moz-linear-gradient(#111, #222);
+  background: -o-linear-gradient(#111, #222);
+}
+
+#colorwheel {
+  margin: 20px auto;
+  position: relative;
+  width: 640px;
+  height: 640px;
+}
+
+.colorWheelLine {
+  position: absolute;
+  top: 310px;
+  left: 420px;
+  width: 310px;
+  height: 20px
+  -ms-transform-origin: -100px 50%;
+  -webkit-transform-origin: -100px 50%;
+  -moz-transform-origin: -100px 50%;
+  -o-transform-origin: -100px 50%;
+  transform-origin: -100px 50%;
+  opacity: 0.1;
+}
+
+.colorWheelLine:hover{
+  opacity: 1;
+}
+
+.selected {
+  opacity: 1;
+}
+
+
+.emptyLine {
+  display:inline-block;
+  width: 50px;
+}
+
+.moodName {
+  display:inline-block;
+  width: 60px;
+  position: absolute;
+}
+
+*:focus {
+  outline: none;
+}
+
+.btn-drop {
+  appearance: none;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  position: absolute;
+}
+
+.water-drop {
+  appearance: none;
+  background-color: red;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  font-weight: 700;
+  transition: border-radius 200ms ease-in-out;
+  cursor: pointer;
+
+
+}
+/*.btn-drop:focus .water-drop {
+  border-top-right-radius:0px;
+}*/
+
+
+
+.btn-drop, circle {
+  fill:#ecf0f1;
+  animation: drop 1s cubic-bezier(0.7, 0, 1, 1);
+}
+
+@keyframes drop {
+  0% {
+    transform: translateX(-150px);
+  }
+  100% {
+    transform: translateX(0px) ;
+  }
+}
+
+
+.collapse, circle {
+  fill:#ecf0f1;
+  animation: collap 1s cubic-bezier(0.7, 0, 1, 1);
+}
+
+@keyframes collap {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-160px) ;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
+
+#colorwheel {
+
+}
+
+
+.drop {
+  overflow: hidden;
+  filter: contrast(34) blur(12px);
+  z-index: 100;
+
+  position: absolute;
+  background: #fff;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.drop {
+  width: 40px;
+  height: 40px;
+  top: 50px;
+  -webkit-animation: drips 5s cubic-bezier(1, 0.75, 0.98, 1.3) 200ms infinite;
+}
+
+@-webkit-keyframes drips {
+  0% {
+    top: 80px;
+    width: 8px;
+    height: 8px;
+  }
+
+  10% {
+    top: 85px;
+    width: 30px;
+    height: 30px;
+  }
+  99% {
+    top: 100%;
+  }
+  100% {
+    top: 101%;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+
+.bar {
+  position: absolute;
+  background: #fff;
+  width: 140%;
+  margin-left: -20%;
+  bottom: -10px;
+  height: 20px;
+  -webkit-filter: blur(12px);
+}
+*/
